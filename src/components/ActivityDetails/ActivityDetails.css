@@ -44,7 +44,8 @@
     cursor: pointer;
 }
 .addbreak p:hover{
-    background-color: orange;
+    background-color: #5D5FEF;
+    color: white
 }
 .exercisedetils{
     background-color: #ECEEF3;
