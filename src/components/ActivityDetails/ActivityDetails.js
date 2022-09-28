@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ActivityDetails.css';
-import developer from '../../noyonhossain.jpg'
+import developer from '../../noyonhossain.jpg';
+import Swal from 'sweetalert2';
 
 const ActivityDetails = ({ activities }) => {  
     const [breakTime, setBreakTime] = useState("");
@@ -13,6 +14,14 @@ const ActivityDetails = ({ activities }) => {
     const breakTimeHandler = (e) => {
       setBreakTime(e.target.innerText);
       localStorage.setItem('Break time', breakTime);
+    }
+
+    const toastAlert = () => {
+        Swal.fire(
+            'Congratulations!',
+            'Project Done!',
+            'success'
+          )
     }
 
     return (
@@ -68,7 +77,7 @@ const ActivityDetails = ({ activities }) => {
             <p>Break time:</p>
             <p>{breakTime}</p>
             </div>
-            <button>Activity Completed</button>
+            <button onClick={toastAlert}>Activity Completed</button>
         </div>
     );
 };

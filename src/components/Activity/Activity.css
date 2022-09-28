@@ -3,7 +3,7 @@
     border-radius: 10px;
     box-shadow: 10px 10px 18px lightgray;
     padding: 10px;
-    height: 380px;
+    height: auto;
     background-color: white;
 }
 .activity img{
@@ -22,7 +22,7 @@
 .activity-info button{
     width: 100%;
     padding: 10px;
-    background-color: #5D5FEF;
+    background-color: salmon;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -30,5 +30,6 @@
     font-size: 16px;
 }
 .activity-info button:hover{
-    background-color: green;
+    background-color: #5D5FEF;
 }
+
