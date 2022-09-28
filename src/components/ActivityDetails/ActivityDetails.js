@@ -3,8 +3,8 @@ import './ActivityDetails.css';
 import developer from '../../noyonhossain.jpg';
 import Swal from 'sweetalert2';
 
-const ActivityDetails = ({ activities }) => {  
-    const [breakTime, setBreakTime] = useState("");
+const ActivityDetails = ({ activities }) => {
+    const [breakTime, setBreakTime] = useState('');
 
     let total = 0;
     for (const time of activities) {
@@ -12,8 +12,9 @@ const ActivityDetails = ({ activities }) => {
     }
 
     const breakTimeHandler = (e) => {
-      setBreakTime(e.target.innerText);
-      localStorage.setItem('Break time', breakTime);
+        setBreakTime(e.target.innerText);
+        localStorage.setItem('break-item', breakTime);
+        
     }
 
     const toastAlert = () => {
@@ -21,7 +22,7 @@ const ActivityDetails = ({ activities }) => {
             'Congratulations!',
             'Project Done!',
             'success'
-          )
+        )
     }
 
     return (
@@ -30,7 +31,7 @@ const ActivityDetails = ({ activities }) => {
                 <img src={developer} alt="" />
                 <div className='avatar-info'>
                     <h4>Noyon Hossain</h4>
-                    <p style={{margin: 0}}><small>Jessore, Dhaka</small></p>
+                    <p style={{ margin: 0 }}><small>Jessore, Dhaka</small></p>
                 </div>
             </div>
             <div className='year'>
@@ -64,18 +65,18 @@ const ActivityDetails = ({ activities }) => {
                     <p>40s</p>
                 </div>
                 <div>
-                    <p>50s</p>
+                <p>50s</p>
                 </div>
             </div>
-            
+
             <h4>Exercise Details</h4>
             <div className='exercisedetils'>
-            <p>Exercise time:</p>
-            <p>{total} seconds</p>
+                <p>Exercise time:</p>
+                <p>{total} seconds</p>
             </div>
             <div className='exercisedetils'>
-            <p>Break time:</p>
-            <p>{breakTime}</p>
+                <p>Break time:</p>
+                <p>{breakTime}</p>
             </div>
             <button onClick={toastAlert}>Activity Completed</button>
         </div>
