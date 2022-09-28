@@ -7,10 +7,10 @@ const Activities = () => {
     const [activities, setActivities] = useState([]);
     const [time, setTime] = useState([]);
 
-    useEffect( () => {
+    useEffect(() => {
         fetch('fakeData.json')
-        .then(res => res.json())
-        .then(data => setActivities(data))
+            .then(res => res.json())
+            .then(data => setActivities(data))
     }, []);
 
     const handelAddToList = (id) => {

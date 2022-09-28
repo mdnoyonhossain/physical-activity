@@ -12,7 +12,7 @@ const ActivityDetails = ({ activities }) => {
 
     const breakTimeHandler = (e) => {
       setBreakTime(e.target.innerText);
-      localStorage.setItem('Break time', breakTime);   
+      localStorage.setItem('Break time', breakTime);
     }
 
     return (
@@ -58,12 +58,11 @@ const ActivityDetails = ({ activities }) => {
                     <p>50s</p>
                 </div>
             </div>
-
             
             <h4>Exercise Details</h4>
             <div className='exercisedetils'>
             <p>Exercise time:</p>
-            <p>{total}</p>
+            <p>{total} seconds</p>
             </div>
             <div className='exercisedetils'>
             <p>Break time:</p>

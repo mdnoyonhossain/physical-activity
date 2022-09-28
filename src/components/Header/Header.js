@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../../logo.jpg';
+import logo from '../../logo.png';
 import './Header.css';
 
 const Header = () => {
     return (
         <div className='header'>
             <img src={logo} alt="" />
-            <h5>Physical Activity</h5>
+            <h3>Physical Activity</h3>
         </div>
     );
 };
