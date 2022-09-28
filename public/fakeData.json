@@ -1,0 +1,44 @@
+[
+  {
+    "id": "63348ae6fc0805e93034a695",
+    "name": "sedentary Activities",
+    "time": 22,
+    "age": "71-81",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVfJCFOicySWIzNR-ZDb8GpvuOXf1UliTEw&usqp=CAU"
+  },
+  {
+    "id": "63348ae616abe3650c19615a",
+    "name": "moderate physical activity",
+    "time": 27,
+    "age": "71-80",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzjY00NHgOCM-VtX0favv2h9Bl0a8cbtKPFA&usqp=CAU"
+  },
+  {
+    "id": "63348ae6d2ed7f71fb70c2e9",
+    "name": "light physical activities",
+    "time": 39,
+    "age": "15-18",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTklgg1yHTuc3_y8LgjK8DoH7QrsWOF5dEzIg&usqp=CAU"
+  },
+  {
+    "id": "63348ae6142cd1795b92075c",
+    "name": "Vigorous Physical Activities",
+    "time": 32,
+    "age": "29-32",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9o4-mY27VVo_yxhYVie3-gSDOc9waJFCg_Q&usqp=CAU"
+  },
+  {
+    "id": "63348ae6d8a438829271618e",
+    "name": "bone strengthening activities",
+    "time": 39,
+    "age": "45-57",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDV8r378CffxBuy57-dAl95MX0lfeTaEMjkQ&usqp=CAU"
+  },
+  {
+    "id": "63348ae6400feb8364615b5b",
+    "name": "aerobic activity",
+    "time": 29,
+    "age": "25-30",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZFkeanJDakN81vpIN9OL-eTtH5REn8loORg&usqp=CAU"
+  }
+]

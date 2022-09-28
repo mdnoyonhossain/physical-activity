@@ -1,0 +1,56 @@
+.activityDetails{
+    background-color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+.activityDetails img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 50px;
+    margin-right: 25px;
+}
+.avatar-info h4, p{
+    margin: 0;
+}
+.year, .addbreak{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #eceef3;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    grid-gap: 10px;
+    text-align: center;
+    margin: 0;
+}
+.year h4, h3{
+    margin: 0;
+}
+.addbreak{
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 30px;
+}
+.addbreak p{
+    background-color: white;
+    padding: 8px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.addbreak p:hover{
+    background-color: orange;
+}
+.exercisedetils{
+    background-color: #ECEEF3;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
