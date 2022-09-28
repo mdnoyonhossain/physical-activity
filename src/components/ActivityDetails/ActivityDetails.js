@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import './ActivityDetails.css';
 import developer from '../../noyonhossain.jpg';
 import Swal from 'sweetalert2';
-import { getStroredCart } from '../fakebd/fakebd';
 
 const ActivityDetails = ({ activities }) => {
     const [breakTime, setBreakTime] = useState('');
@@ -13,9 +12,10 @@ const ActivityDetails = ({ activities }) => {
     }
 
     const breakTimeHandler = (e) => {
-        setBreakTime(e.target.innerText);
+        const targetValue = e.target.innerText;
+        localStorage.setItem('thfdsakf', targetValue)
+        setBreakTime(targetValue);
     }
-
 
     const toastAlert = () => {
         Swal.fire(
