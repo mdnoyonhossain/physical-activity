@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ActivityDetails.css';
 import developer from '../../noyonhossain.jpg';
 import Swal from 'sweetalert2';
@@ -13,9 +13,13 @@ const ActivityDetails = ({ activities }) => {
 
     const breakTimeHandler = (e) => {
         const targetValue = e.target.innerText;
-        localStorage.setItem('thfdsakf', targetValue)
+        localStorage.setItem('break-time', targetValue);
         setBreakTime(targetValue);
     }
+
+    useEffect(() => {
+        localStorage.getItem('break-time')
+    }, [breakTime])
 
     const toastAlert = () => {
         Swal.fire(
@@ -76,7 +80,7 @@ const ActivityDetails = ({ activities }) => {
             </div>
             <div className='exercisedetils'>
                 <p>Break time:</p>
-                <p>{breakTime}</p>
+                <p>{localStorage.getItem('break-time')}</p>
             </div>
             <button onClick={toastAlert}>Activity Completed</button>
         </div>
